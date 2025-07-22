@@ -46,7 +46,7 @@ const SideMenu = ({ activeMenu }) => {
           `cursor-pointer w-full flex items-center gap-4 text-[15px] py-3 px-6 rounded-lg mb-3
            ${isActive ? "text-white bg-primary" : "hover:bg-gray-100"}`
         }
-          // onClick={() => handleClick(item.path)}
+           onClick={() => handleClick(item.path)}
         >
           <item.icon className="" />
           {item.label}
