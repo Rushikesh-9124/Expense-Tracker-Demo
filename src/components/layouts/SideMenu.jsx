@@ -41,7 +41,7 @@ const SideMenu = ({ activeMenu }) => {
       </div>
       {SIDE_MENU_DATA.map((item, idx) => (
         <NavLink
-          to={item.path}
+          to={item.path != 'logout' ? item.path : '/login'}
           key={`menu_${idx}`}
           className={({ isActive }) =>
           `cursor-pointer w-full flex items-center gap-4 text-[15px] py-3 px-6 rounded-lg mb-3
