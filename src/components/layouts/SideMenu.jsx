@@ -7,11 +7,13 @@ const SideMenu = ({ activeMenu }) => {
   const { user, clearUser } = useContext(UserContext);
   const navigate = useNavigate();
   const handleClick = (route) => {
-    if (route === "/logout") {
+    if (route === "logout") {
       handleLogout();
       return
     }
-    navigate(route)
+    else{
+      navigate(route)
+    }
   };
   
   const handleLogout = () => {
