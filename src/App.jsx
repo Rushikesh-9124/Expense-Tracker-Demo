@@ -18,7 +18,7 @@ const App = () => {
   return (
     <UserProvider>
       <ToastContainer />
-      <Router>
+      <Router basename="/">
         <Routes>
           <Route path="/" element={<Root />} />
           <Route path="/login" element={<Login />} />
